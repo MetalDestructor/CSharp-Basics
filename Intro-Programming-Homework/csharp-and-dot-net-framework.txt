@@ -1,0 +1,2 @@
+The difference between C# and .Net framework is that C# is programming 
+language.In the other hand .Net is a framework that C# is built on.
