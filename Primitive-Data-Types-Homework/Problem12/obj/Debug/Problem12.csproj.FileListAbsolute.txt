@@ -1,0 +1,5 @@
+C:\Users\MetalPrince\Dropbox\Workspace\SoftUni\Primitive-Data-Types-Homework\Primitive-Data-Types-Homework\Problem12\bin\Debug\Problem12.exe.config
+C:\Users\MetalPrince\Dropbox\Workspace\SoftUni\Primitive-Data-Types-Homework\Primitive-Data-Types-Homework\Problem12\bin\Debug\Problem12.exe
+C:\Users\MetalPrince\Dropbox\Workspace\SoftUni\Primitive-Data-Types-Homework\Primitive-Data-Types-Homework\Problem12\bin\Debug\Problem12.pdb
+C:\Users\MetalPrince\Dropbox\Workspace\SoftUni\Primitive-Data-Types-Homework\Primitive-Data-Types-Homework\Problem12\obj\Debug\Problem12.exe
+C:\Users\MetalPrince\Dropbox\Workspace\SoftUni\Primitive-Data-Types-Homework\Primitive-Data-Types-Homework\Problem12\obj\Debug\Problem12.pdb
