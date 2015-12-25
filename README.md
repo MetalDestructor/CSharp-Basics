@@ -1,2 +1,2 @@
 # CSharp-Basics
-Collects all C# Basics homeworks for Telerik Academy and SoftUni
+Collects all C# Part 1 homeworks for Telerik Software Academy
