@@ -1,6 +1,0 @@
-C:\Users\MetalPrince\Dropbox\Workspace\SoftUni\Primitive-Data-Types-Homework\Primitive-Data-Types-Homework\Problem7\bin\Debug\Problem7.exe.config
-C:\Users\MetalPrince\Dropbox\Workspace\SoftUni\Primitive-Data-Types-Homework\Primitive-Data-Types-Homework\Problem7\bin\Debug\Problem7.exe
-C:\Users\MetalPrince\Dropbox\Workspace\SoftUni\Primitive-Data-Types-Homework\Primitive-Data-Types-Homework\Problem7\bin\Debug\Problem7.pdb
-C:\Users\MetalPrince\Dropbox\Workspace\SoftUni\Primitive-Data-Types-Homework\Primitive-Data-Types-Homework\Problem7\obj\Debug\Problem7.csprojResolveAssemblyReference.cache
-C:\Users\MetalPrince\Dropbox\Workspace\SoftUni\Primitive-Data-Types-Homework\Primitive-Data-Types-Homework\Problem7\obj\Debug\Problem7.exe
-C:\Users\MetalPrince\Dropbox\Workspace\SoftUni\Primitive-Data-Types-Homework\Primitive-Data-Types-Homework\Problem7\obj\Debug\Problem7.pdb
