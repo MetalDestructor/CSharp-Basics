@@ -1,13 +1,18 @@
 ﻿using System;
 
-class AgeAfterTenYears
+namespace HelloWorld
 {
-    static void Main()
+    class Program
     {
-        Console.Write("Your current Age : ");
-        int age = int.Parse(Console.ReadLine());
+        static void Main()
+        {
+            DateTime today = DateTime.Now;
+            DateTime birthday = DateTime.Parse(Console.ReadLine());
+            int age = today.Year - birthday.Year;
 
-        Console.WriteLine("Your current age is : " + age);
-        Console.WriteLine("After 10 years you will be : " + (age+10));
+            if (today < birthday.AddYears(age)) --age;
+            
+            Console.WriteLine("{0}\n{1}",age, age+10);
+        }
     }
 }
