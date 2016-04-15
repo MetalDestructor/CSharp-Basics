@@ -10,17 +10,15 @@ namespace Problem7
     {
         static void Main(string[] args)
         {
-            Console.Write("x = ");
             double x = Double.Parse(Console.ReadLine());
-            Console.Write("y = ");
             double y = Double.Parse(Console.ReadLine());
-            if (Math.Pow((x - 0), 2) + Math.Pow((y - 0), y) <= Math.Pow(2, 2))
+            if (Math.Pow((x - 0), 2) + Math.Pow((y - 0), 2) <= Math.Pow(2, 2))
             {
-                Console.WriteLine($"The point with x = {x} and y = {y} is in the circle");
+                Console.WriteLine("yes {0:F2}", Math.Sqrt(Math.Pow((x-0),2) + (Math.Pow((y-0),2))));
             }
             else
             {
-                Console.WriteLine($"The point with x = {x} and y = {y} is not in the circle");
+                Console.WriteLine("no {0:F2}", Math.Sqrt(Math.Pow((x-0),2) + (Math.Pow((y-0),2))));
             }
         }
     }

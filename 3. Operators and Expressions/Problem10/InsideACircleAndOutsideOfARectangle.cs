@@ -10,17 +10,31 @@ namespace Problem10
     {
         static void Main(string[] args)
         {
-            Console.Write("x = ");
             double x = Double.Parse(Console.ReadLine());
-            Console.Write("y = ");
             double y = Double.Parse(Console.ReadLine());
-            if (Math.Pow((x - 1), 2) + Math.Pow((x - 1), 2) <= Math.Pow(1.5, 2) && (x <= 2.5 && x > -0.5) && (y <= 2.5 && y > 1))
+			bool isInCircle = Math.Pow((x - 1), 2) + Math.Pow((y - 1), 2) <= Math.Pow(1.5, 2);
+			bool isInRectangle = ((x >= -1) && (x <= 5) && (y <= 1) && (y >= -1));
+            if (isInCircle)
             {
-                Console.WriteLine("yes");
+                if (isInRectangle)
+				{
+					Console.WriteLine("inside circle inside rectangle");
+				}
+				else
+				{
+					Console.WriteLine("inside circle outside rectangle");
+				}
             }
             else
             {
-                Console.WriteLine("no");
+				if (isInRectangle)
+				{
+					Console.WriteLine("outside circle inside rectangle");
+				}
+				else
+				{
+					Console.WriteLine("outside circle outside rectangle");
+				}
             }
         }
     }

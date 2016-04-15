@@ -10,16 +10,15 @@ namespace Problem12
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter the number: ");
-            int num = Int32.Parse(Console.ReadLine());
-            Console.Write("Enter the position of the digit you want: ");
-            int pos = Int32.Parse(Console.ReadLine());
+            long n = long.Parse(Console.ReadLine());
+            int p = Int32.Parse(Console.ReadLine());
 
-            int mask = 1 << pos;
-            int numAndMask = num & mask;
-            int result = numAndMask >> pos;
+            //int mask = 1 << pos;
+            //int numAndMask = num & mask;
+            //int result = numAndMask >> pos;
+			long result = (n >> p) & 1;
 
-            Console.WriteLine(result);
+            Console.WriteLine(Convert.ToString(result,2));
         }
     }
 }

@@ -10,7 +10,6 @@ namespace Problem6
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a number : ");
             int numbers = int.Parse(Console.ReadLine());
             string strNumber = numbers.ToString();
 

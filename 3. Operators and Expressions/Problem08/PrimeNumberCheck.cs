@@ -30,11 +30,11 @@ namespace Problem8
             }
             if (result == true)
             {
-                Console.WriteLine($"{num} is prime");
+                Console.WriteLine("true");
             }
             else
             {
-                Console.WriteLine(($"{num} is not prime"));
+                Console.WriteLine("false");
             }
         }
     }

@@ -10,23 +10,20 @@ namespace Problem14
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter the number: ");
-            int num = Int32.Parse(Console.ReadLine());
-            Console.Write("Enter the position of the digit you want: ");
-            int pos = Int32.Parse(Console.ReadLine());
-            Console.Write("Enter a bit value: ");
-            int v = Int32.Parse(Console.ReadLine());
+            ulong num = ulong.Parse(Console.ReadLine());
+            ulong pos = ulong.Parse(Console.ReadLine());
+            ulong v = ulong.Parse(Console.ReadLine());
 
-            if (v == 0)
+            if (v == 1)
             {
-                int mask = ~(1 << pos);
-                int result = num & mask;
+				ulong mask = v << pos;
+                ulong result = (ulong)(num | mask);
                 Console.WriteLine(result);
             }
             else
             {
-                int mask = 1 << pos;
-                int result = num | mask;
+                ulong mask = ~(v << pos);
+                ulong result = (ulong)(num & mask);
                 Console.WriteLine(result);
             }
         }

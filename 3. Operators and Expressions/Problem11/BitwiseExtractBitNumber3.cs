@@ -11,7 +11,6 @@ namespace Problem11
         static void Main(string[] args)
         {
             int pos = 3;
-            Console.Write("Enter number: ");
             int num = Int32.Parse(Console.ReadLine());
             int mask = 1 << pos;
             int posAndMask = mask & num;

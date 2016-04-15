@@ -10,8 +10,7 @@ namespace Problem15
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter number: ");
-            int num = int.Parse(Console.ReadLine());
+            long num = long.Parse(Console.ReadLine());
             int p1 = 3;
             int p2 = 4;
             int p3 = 5;
@@ -22,12 +21,12 @@ namespace Problem15
             int mask1 = 1 << p1;
             int mask3 = 1 << p2;
             int mask5 = 1 << p3;
-            int numAndMask1 = num & mask1;
-            int v1 = numAndMask1 >> p1;            
+            long numAndMask1 = num & mask1;
+            long v1 = numAndMask1 >> p1;            
             if (v1 == 1)
             {
                 int mask2 = v1 << p4;
-                int result1 = num | mask2;
+                long result1 = num | mask2;
                 int resultAndMask1 = result1 & mask3;
                 int v2 = resultAndMask1 >> p2;
                 if(v2 ==1)
