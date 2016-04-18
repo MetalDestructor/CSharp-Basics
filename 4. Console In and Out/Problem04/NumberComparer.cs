@@ -10,19 +10,10 @@ namespace Problem4
     {
         static void Main(string[] args)
         {
-            Console.Write("a = ");
             double a = double.Parse(Console.ReadLine());
-            Console.Write("b = ");
             double b = double.Parse(Console.ReadLine());
 
-            if (a<b)
-            {
-                Console.WriteLine($"{b} is greater");
-            }
-            else
-            {
-                Console.WriteLine($"{a} is greater");
-            }
+            Console.WriteLine(a<b?b:a);
         }
     }
 }

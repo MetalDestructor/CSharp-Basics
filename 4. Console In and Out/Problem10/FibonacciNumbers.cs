@@ -23,13 +23,20 @@ namespace Problem10
         }
         static void Main(string[] args)
         {
-            Console.Write("Enter number: ");
             int num = int.Parse(Console.ReadLine());
+			if(num == 1){
+				Console.WriteLine("0");
+				return;
+			}
             for (int i = 0; i < num; i++)
             {
-                Console.Write($"{Fibonacci(i)} ");
+				if(i == num-1){
+					Console.WriteLine("{0}", Fibonacci(i));
+					break;
+				}
+                Console.Write("{0}, ", Fibonacci(i));
+				
             }
-            Console.WriteLine();
         }
     }
 }

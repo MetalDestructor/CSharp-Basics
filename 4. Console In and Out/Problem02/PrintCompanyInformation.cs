@@ -10,31 +10,22 @@ namespace Problem2
     {
         static void Main(string[] args)
         {
-            Console.Write("Company name: ");
             string name = Console.ReadLine();
-            Console.Write("Company address: ");
             string address = Console.ReadLine();
-            Console.Write("Phone number: ");
             string pNumber = Console.ReadLine();
-            Console.Write("Fax number: ");
             string fNumber = Console.ReadLine();
-            Console.Write("Web site: ");
             string site = Console.ReadLine();
-            Console.Write("Manager First Name: ");
             string fName = Console.ReadLine();
-            Console.Write("Manager Last Name: ");
             string lName = Console.ReadLine();
-            Console.Write("Manager Age: ");
             byte age = byte.Parse(Console.ReadLine());
-            Console.Write("Manager Phone");
             string phone = Console.ReadLine();
 
-            Console.WriteLine($"{name}");
-            Console.WriteLine($"Adress: {address}");
-            Console.WriteLine($"Tel. {pNumber}");
-            Console.WriteLine($"Fax: {fNumber}");
-            Console.WriteLine($"Web site: {site}");
-            Console.WriteLine($"Manager: {fName} {lName} (age: {age}, tel. {phone})");
+            Console.WriteLine("{0}", name != ""?name:"(no name)");
+            Console.WriteLine("Address: {0}", address != ""?address:"(no address)");
+            Console.WriteLine("Tel. {0}", pNumber != ""?pNumber:"(no phone number)");
+            Console.WriteLine("Fax: {0}", fNumber != ""?fNumber:"(no fax)");
+            Console.WriteLine("Web site: {0}", site != ""?site:"(no site)");
+            Console.WriteLine("Manager: {0} {1} (age: {2}, tel. {3})", fName != ""?fName:"(no first name)", lName != ""?lName:"(no last name)", age, phone != ""?phone:"(no phone)");
         }
     }
 }

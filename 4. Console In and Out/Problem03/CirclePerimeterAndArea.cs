@@ -11,14 +11,13 @@ namespace Problem3
         static void Main(string[] args)
         {
             const double pi = 3.14159265359;
-            Console.Write("r = ");
             double radius = double.Parse(Console.ReadLine());
 
             double area = pi * Math.Pow(radius, 2);
             double perimeter = 2 * pi * radius;
 
-            Console.WriteLine(String.Format("Area: {0:0.00}", area));
-            Console.WriteLine(String.Format("Perimeter: {0:0.00}", perimeter));
+            Console.Write("{0:0.00} ", perimeter);
+            Console.Write("{0:0.00}", area);
         }
     }
 }
