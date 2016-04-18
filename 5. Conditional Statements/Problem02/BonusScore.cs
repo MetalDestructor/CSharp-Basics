@@ -30,13 +30,11 @@ namespace Problem02
                     result = a * 1000;
                     break;
                 default:
-                    Console.WriteLine("Invalid score");
-                    break;
+                    Console.WriteLine("invalid score");
+                    return;
+                    
             }
-            if (a > 0 && a < 10)
-            {
                 Console.WriteLine(result);
-            }
         }
     }
 }

@@ -27,10 +27,10 @@ namespace Problem03
                 case "Q":
                 case "K":
                 case "A":
-                    Console.WriteLine("yes");
+                    Console.WriteLine("yes {0}", a);
                     break;
                 default:
-                    Console.WriteLine("no");
+                    Console.WriteLine("no {0}", a);
                     break;
             }
         }

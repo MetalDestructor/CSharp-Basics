@@ -10,21 +10,20 @@ namespace Problem09
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please choose a type:\n1 --> int\n2 --> double\n3 --> string");
-            int select = int.Parse(Console.ReadLine());
+            string select = Console.ReadLine();
             switch (select)
             {
-                case 1:
+                case "integer":
                     int intNum = int.Parse(Console.ReadLine());
                     intNum = intNum + 1;
                     Console.WriteLine(intNum);
                     break;
-                case 2:
+                case "real":
                     double doubleNum = double.Parse(Console.ReadLine());
                     doubleNum = doubleNum + 1;
-                    Console.WriteLine(doubleNum);
+                    Console.WriteLine("{0:F2}", doubleNum);
                     break;
-                case 3:
+                case "text":
                     String str = Console.ReadLine();
                     str = str + '*';
                     Console.WriteLine(str);

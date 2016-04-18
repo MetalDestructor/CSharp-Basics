@@ -18,38 +18,38 @@ namespace Problem07
             {
                 if (b < c)
                 {
-                    Console.WriteLine("{0:0.0}, {1:0.0}, {2:0.0}", c, b, a);
+                    Console.WriteLine("{0} {1} {2}", c, b, a);
                 }
                 else
                 {
-                    Console.WriteLine("{0:0.0}, {1:0.0}, {2:0.0}", b, c, a);
+                    Console.WriteLine("{0} {1} {2}", b, c, a);
                 }
             }
             else if (b < c)
             {
                 if (c < a)
                 {
-                    Console.WriteLine("{0:0.0}, {1:0.0}, {2:0.0}", a, c, b);
+                    Console.WriteLine("{0} {1} {2}", a, c, b);
                 }
                 else
                 {
-                    Console.WriteLine("{0:0.0}, {1:0.0}, {2:0.0}", c, a, b);
+                    Console.WriteLine("{0} {1} {2}", c, a, b);
                 }
             }
             else if (c < a)
             {
                 if (a < b)
                 {
-                    Console.WriteLine("{0:0.0}, {1:0.0}, {2:0.0}", b, a, c);
+                    Console.WriteLine("{0} {1} {2}", b, a, c);
                 }
                 else
                 {
-                    Console.WriteLine("{0:0.0}, {1:0.0}, {2:0.0}", a, b, c);
+                    Console.WriteLine("{0} {1} {2}", a, b, c);
                 }
             }
             else
             {
-                Console.WriteLine("{0:0.0}, {1:0.0}, {2:0.0}", a, b, c);
+                Console.WriteLine("{0} {1} {2}", a, b, c);
             }
         }
     }

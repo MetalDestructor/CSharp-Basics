@@ -26,7 +26,7 @@ namespace Problem05
             {
                 max = c;
             }
-            Console.WriteLine("{0:0.0}", max);
+            Console.WriteLine(max);
         }
     }
 }

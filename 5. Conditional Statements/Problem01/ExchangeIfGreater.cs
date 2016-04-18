@@ -15,11 +15,11 @@ namespace Problem01
 
             if (a < b)
             {
-                Console.WriteLine("{0:0.0} {1:0.0}", a, b);
+                Console.WriteLine("{0} {1}", a, b);
             }
             else
             {
-                Console.WriteLine("{0:0.0} {1:0.0}", b, a);
+                Console.WriteLine("{0} {1}", b, a);
 
             }
         }

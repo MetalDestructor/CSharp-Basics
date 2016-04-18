@@ -59,7 +59,7 @@ namespace Problem06
                 max = e;
             }
 
-            Console.WriteLine("{0:0.0}", max);
+            Console.WriteLine(max);
         }
     }
 }
