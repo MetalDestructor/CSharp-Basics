@@ -10,55 +10,22 @@ namespace Problem06
     {
         static void Main(string[] args)
         {
-            double a = double.Parse(Console.ReadLine());
-            double b = double.Parse(Console.ReadLine());
-            double c = double.Parse(Console.ReadLine());
-            double d = double.Parse(Console.ReadLine());
-            double e = double.Parse(Console.ReadLine());
+            double[] arr = new double[5];
+            arr[0] = double.Parse(Console.ReadLine());
+            arr[1] = double.Parse(Console.ReadLine());
+            arr[2] = double.Parse(Console.ReadLine());
+            arr[3] = double.Parse(Console.ReadLine());
+            arr[4] = double.Parse(Console.ReadLine());
 
-            double max = a;
+            double max = arr[0];
 
-            if (max < b)
+            for (int i = 0; i < 5; i++)
             {
-                max = b;
-                if (max < c)
+                if (max<arr[i])
                 {
-                    max = c;
-                    if (max < d)
-                    {
-                        max = d;
-                        if (max < e)
-                        {
-                            max = e;
-                        }
-                    }
+                    max = arr[i];
                 }
             }
-            else if (max < c)
-            {
-                max = c;
-                if (max < d)
-                {
-                    max = d;
-                    if (max < e)
-                    {
-                        max = e;
-                    }
-                }
-            }
-            else if (max < d)
-            {
-                max = d;
-                if (max < e)
-                {
-                    max = e;
-                }
-            }
-            else if (max < e)
-            {
-                max = e;
-            }
-
             Console.WriteLine(max);
         }
     }
