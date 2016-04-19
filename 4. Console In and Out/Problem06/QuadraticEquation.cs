@@ -14,7 +14,7 @@ namespace Problem6
             double b = double.Parse(Console.ReadLine());
             double c = double.Parse(Console.ReadLine());
 
-            double D = (Math.Pow(b, 2)) - 4 * a * c;
+            double D = Math.Pow(b, 2) - 4 * a * c;
             if (D == 0)
             {
                 double x = -(b) / (2 * a);
@@ -29,7 +29,7 @@ namespace Problem6
                 double x1 = (-(b) - Math.Sqrt(D)) / (2 * a);
                 double x2 = (-(b) + Math.Sqrt(D)) / (2 * a);
 
-                Console.WriteLine("{0:F2}\n{2:F2}", x1, x2);
+                Console.WriteLine("{0:F2}\r\n{1:F2}", x1, x2);
             }
         }
     }
