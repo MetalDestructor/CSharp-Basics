@@ -1,2 +1,2 @@
-# CSharp-Basics
-Collects all C# Part 1 homeworks for Telerik Software Academy
+# Telerik Software Academy Season 7
+Collects homeworks for Telerik Software Academy
