@@ -8,107 +8,100 @@ namespace Problem04
 {
     class PrintDeckOfCards
     {
+        public static void printPaints(char c)
+        {
+            Console.WriteLine("{0} of spades, {0} of clubs, {0} of hearts, {0} of diamonds", c);
+        }
         static void Main(string[] args)
         {
-            for (int i = 2; i < 15; i++)
+            char n = (char)Console.Read();
+            if (n >= '2' && n <= '9')
             {
-                for (int j = 0; j < 4; j++)
+                switch (n)
                 {
-                    switch (i)
-                    {
-                        case 11:
-                            Console.WriteLine("J ");
-                            switch (j)
-                            {
-                                case 0:
-                                    Console.WriteLine("of spades, ");
-                                    break;
-                                case 1:
-                                    Console.WriteLine("of clubs, ");
-                                    break;
-                                case 2:
-                                    Console.WriteLine("of hearts, ");
-                                    break;
-                                case 3:
-                                    Console.WriteLine("of diamonds");
-                                    break;
-                            }
-                            break;
-                        case 12:
-                            Console.WriteLine("Q ");
-                            switch (j)
-                            {
-                                case 0:
-                                    Console.WriteLine("of spades, ");
-                                    break;
-                                case 1:
-                                    Console.WriteLine("of clubs, ");
-                                    break;
-                                case 2:
-                                    Console.WriteLine("of hearts, ");
-                                    break;
-                                case 3:
-                                    Console.WriteLine("of diamonds");
-                                    break;
-                            }
-                            break;
-                        case 13:
-                            Console.WriteLine("K ");
-                            switch (j)
-                            {
-                                case 0:
-                                    Console.WriteLine("of spades, ");
-                                    break;
-                                case 1:
-                                    Console.WriteLine("of clubs, ");
-                                    break;
-                                case 2:
-                                    Console.WriteLine("of hearts, ");
-                                    break;
-                                case 3:
-                                    Console.WriteLine("of diamonds");
-                                    break;
-                            }
-                            break;
-                        case 14:
-                            Console.WriteLine("A ");
-                            switch (j)
-                            {
-                                case 0:
-                                    Console.WriteLine("of spades, ");
-                                    break;
-                                case 1:
-                                    Console.WriteLine("of clubs, ");
-                                    break;
-                                case 2:
-                                    Console.WriteLine("of hearts, ");
-                                    break;
-                                case 3:
-                                    Console.WriteLine("of diamonds");
-                                    break;
-                            }
-                            break;
-                        default:
-                            switch (j)
-                            {
-                                case 0:
-                                    Console.WriteLine(i + " of spades, ");
-                                    break;
-                                case 1:
-                                    Console.WriteLine(i + " of clubs, ");
-                                    break;
-                                case 2:
-                                    Console.WriteLine(i + " of hearts, ");
-                                    break;
-                                case 3:
-                                    Console.WriteLine(i + " of diamonds");
-                                    break;
-                            }
-                            break;
-                    }
+                    case '3':
+                        for (char i = '2'; i <= '3'; i++)
+                        {
+                            printPaints(i);
+                        }; break;
+                    case '4':
+                        for (char i = '2'; i <= '4'; i++)
+                        {
+                            printPaints(i);
+                        }; break;
+                    case '5':
+                        for (char i = '2'; i <= '5'; i++)
+                        {
+                            printPaints(i);
+                        }; break;
+                    case '6':
+                        for (char i = '2'; i <= '6'; i++)
+                        {
+                            printPaints(i);
+                        }; break;
+                    case '7':
+                        for (char i = '2'; i <= '7'; i++)
+                        {
+                            printPaints(i);
+                        }; break;
+                    case '8':
+                        for (char i = '2'; i <= '8'; i++)
+                        {
+                            printPaints(i);
+                        }; break;
+                    case '9':
+                        for (char i = '2'; i <= '9'; i++)
+                        {
+                            printPaints(i);
+                        }; break;
+                    default:
+                        break;
                 }
-                Console.WriteLine();
+
             }
+            else if (n == 'J' || n == 'Q' || n == 'K' || n == 'A')
+            {
+                switch (n)
+                {
+                    case 'J':
+                        for (char i = '2'; i <= '9'; i++)
+                        {
+                            printPaints(i);
+                        };
+                        Console.WriteLine("{0} of spades, {0} of clubs, {0} of hearts, {0} of diamonds", 'J');
+                        break;
+                    case 'Q':
+                        for (char i = '2'; i <= '9'; i++)
+                        {
+                            printPaints(i);
+                        };
+                        Console.WriteLine("{0} of spades, {0} of clubs, {0} of hearts, {0} of diamonds", 'J');
+                        Console.WriteLine("{0} of spades, {0} of clubs, {0} of hearts, {0} of diamonds", 'Q');
+                        break;
+                    case 'K':
+                        for (char i = '2'; i <= '9'; i++)
+                        {
+                            printPaints(i);
+                        };
+                        Console.WriteLine("{0} of spades, {0} of clubs, {0} of hearts, {0} of diamonds", 'J');
+                        Console.WriteLine("{0} of spades, {0} of clubs, {0} of hearts, {0} of diamonds", 'Q');
+                        Console.WriteLine("{0} of spades, {0} of clubs, {0} of hearts, {0} of diamonds", 'K');
+                        break;
+                    case 'A':
+                        for (char i = '2'; i <= '9'; i++)
+                        {
+                            printPaints(i);
+                        };
+                        Console.WriteLine("{0} of spades, {0} of clubs, {0} of hearts, {0} of diamonds", 'J');
+                        Console.WriteLine("{0} of spades, {0} of clubs, {0} of hearts, {0} of diamonds", 'Q');
+                        Console.WriteLine("{0} of spades, {0} of clubs, {0} of hearts, {0} of diamonds", 'K');
+                        Console.WriteLine("{0} of spades, {0} of clubs, {0} of hearts, {0} of diamonds", 'A');
+                        break;
+                    default:
+                        break;
+                }
+            }
+
         }
     }
 }

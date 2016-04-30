@@ -12,9 +12,9 @@ namespace Problem01
         {
             int num = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i < num; i++)
+            for (int i = 1; i <= num; i++)
             {
-                Console.WriteLine(i + " ");
+                Console.Write(i + " ");
             }
         }
     }

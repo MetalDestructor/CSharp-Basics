@@ -12,12 +12,12 @@ namespace Problem03
         {
             int num = int.Parse(Console.ReadLine());
 
-            int[] arr = new int[num];
+            double[] arr = new double[num];
             for (int i = 0; i < num; i++)
             {
-                arr[i] = int.Parse(Console.ReadLine());
+                arr[i] = double.Parse(Console.ReadLine());
             }
-            int min = arr[0];
+            double min = arr[0];
             for (int i = 0; i < num; i++)
             {
                 if (arr[i] < min)
@@ -25,7 +25,7 @@ namespace Problem03
                     min = arr[i];
                 }
             }
-            int max = arr[0];
+            double max = arr[0];
             for (int i = 0; i < num; i++)
             {
                 if (arr[i] > max)
@@ -33,16 +33,16 @@ namespace Problem03
                     max = arr[i];
                 }
             }
-            int sum = 0;
+            double sum = 0;
             for (int i = 0; i < num; i++)
             {
                 sum += arr[i];
             }
             double avarage = sum / (double)num;
-            Console.WriteLine("min = {0}", min);
-            Console.WriteLine("max = {0}", max);
-            Console.WriteLine("sum = {0}", sum);
-            Console.WriteLine("avarage = {0:0.00}", avarage);
+            Console.WriteLine("min={0:F2}", min);
+            Console.WriteLine("max={0:F2}", max);
+            Console.WriteLine("sum={0:F2}", sum);
+            Console.WriteLine("avg={0:F2}", avarage);
         }
     }
 }
