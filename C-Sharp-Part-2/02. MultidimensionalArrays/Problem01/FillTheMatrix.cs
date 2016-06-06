@@ -87,25 +87,6 @@ namespace Problem01
 
         static void FillC(int[,] arr)
         {
-            //int t = 0;
-            //int k = 1;
-            //for (int i = arr.GetLength(0) - 1; i >= 0; i--)
-            //{
-            //    for (int j = 0; j < arr.GetLength(1); j++)
-            //    {
-
-            //        if ((j + t) < arr.GetLength(0))
-            //        {
-            //            arr[i, j + t] = k++;
-            //            t++;
-            //        }
-            //        else
-            //        {
-            //            break;
-            //        }
-            //    }
-            //    t = 0;
-            //}
             int n = arr.GetLength(0);
             int num = 1;
             int firstHalf = arr.GetLength(0);
