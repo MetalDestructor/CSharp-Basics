@@ -74,4 +74,4 @@ namespace Problem07
             Console.WriteLine(result);
         }
     }
-}
+} //85%
