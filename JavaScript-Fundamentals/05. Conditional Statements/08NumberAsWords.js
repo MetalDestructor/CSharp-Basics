@@ -1,3 +1,0 @@
-function solve(numbers) {
-    //TODO
-}

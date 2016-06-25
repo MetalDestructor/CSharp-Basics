@@ -1,0 +1,3 @@
+function numberAsWords(numbers) {
+    //TODO
+}
